@@ -29,7 +29,7 @@
   justify-content: center;
   margin-top: 30px;
   width: 100%;
-  transition: color 0.2s ease-in;
+  transition: color $default-transition-duration ease-in;
 
   &:hover {
     color: darken($color: white, $amount: 20);
@@ -49,7 +49,7 @@
   display: flex;
   margin-bottom: 10px;
   overflow: hidden;
-  transition: opacity 0.2s ease;
+  transition: opacity $default-transition-duration ease;
 
   &:hover {
     opacity: 0.9;

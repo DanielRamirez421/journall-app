@@ -11,16 +11,18 @@ export const AuthRouter = () => {
       <div className="auth__box--container">
         <Switch>
           <Route
-            path={`${routerConstants.auth}${routerConstants.login}`}
-            component={LoginScreen}
+            path={`${ routerConstants.auth }${ routerConstants.login }`}
+            component={ LoginScreen }
             exact
           ></Route>
           <Route
-            path={`${routerConstants.auth}${routerConstants.register}`}
-            component={RegisterScreen}
+            path={`${ routerConstants.auth }${ routerConstants.register }`}
+            component={ RegisterScreen }
             exact
           ></Route>
-          <Redirect to={`${routerConstants.auth}${routerConstants.login}`} />
+          <Redirect 
+            to={`${ routerConstants.auth }${ routerConstants.login }`} 
+          />
         </Switch>
       </div>
     </div>

@@ -13,12 +13,12 @@ export const AppRouter = () => {
         <Switch>
 
           <Route 
-            path={routerConstants.auth} 
-            component={AuthRouter}
+            path={ routerConstants.auth } 
+            component={ AuthRouter }
           ></Route>
           <Route
-            path={routerConstants.root}
-            component={JournalScreen}
+            path={ routerConstants.root }
+            component={ JournalScreen }
             exact
           ></Route>
           <Redirect 
